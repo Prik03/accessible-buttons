@@ -23,20 +23,22 @@
                 <p>This button performs a one-time action when clicked. It does not maintain any state.</p>
                 <button id="normalBtn" onclick="alert('Hello')">Action</button>
             </div>
-
+            <hr>
             <!-- Toggle Button -->
             <div class="box" role="region" aria-label="Toggle Button">
                 <h2>Wishlist Toggle Button</h2>
-                <p>This button has a toggled state (ON/OFF). It uses <code>aria-pressed</code> to indicate the state for
+                <p>This button has a toggled state (Pressed/Not-pressed). It uses <code>aria-pressed</code> to indicate
+                    the state for
                     screen readers.</p>
                 <button type="button" aria-label="Wishlist" aria-pressed="false" id="likeBtn">&#10084;</button>
             </div>
-
+            <hr>
             <!-- Switch Button -->
             <div class="box" role="region" aria-label="Switch Button">
                 <h2>Dark Mode Switch</h2>
                 <p>This is a binary switch representing ON/OFF state. It uses <code>role="switch"</code> and
-                    <code>aria-checked</code> for accessibility. Clicking it toggles the mode.</p>
+                    <code>aria-checked</code> for accessibility. Clicking it toggles the mode.
+                </p>
                 <button role="switch" aria-label="Dark Mode" class="switch-btn" aria-checked="false"
                     id="darkModeSwitch"></button>
             </div>
