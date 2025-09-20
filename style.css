@@ -1,5 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
 #likeBtn {
   background-color: transparent;
   border: 0;
   font-size: 22px;
+  color: gray;
+}
+
+.switch-btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.switch-btn::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch-btn.active {
+  background-color: #ff7c93; /* Pink when ON */
+}
+
+.switch-btn.active::before {
+  transform: translateX(26px);
 }
