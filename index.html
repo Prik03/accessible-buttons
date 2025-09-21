@@ -10,6 +10,7 @@
         content="Accessible Buttons demo project with Normal Button, Toggle Button, and Switch Button using ARIA roles for accessibility. Responsive and keyboard-friendly UI examples.">
 
     <title>Accessible Buttons | Normal, Toggle, and Switch Buttons Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 
@@ -23,23 +24,35 @@
         <div class="main">
 
             <!-- Normal Button -->
-            <div class="box" role="region" aria-label="Normal Button Without State">
+            <div class="box">
                 <h2>Normal Button</h2>
                 <p>This button performs a one-time action when clicked. It does not maintain any state.</p>
                 <button id="normalBtn" onclick="alert('Hello')">Action</button>
             </div>
             <hr>
             <!-- Toggle Button -->
-            <div class="box" role="region" aria-label="Toggle Button">
-                <h2>Wishlist Toggle Button</h2>
+            <div class="box">
+                <h2>Wishlist And Like Toggle Button</h2>
                 <p>This button has a toggled state (Pressed/Not-pressed). It uses <code>aria-pressed</code> to indicate
                     the state for
                     screen readers.</p>
-                <button type="button" aria-label="Wishlist" aria-pressed="false" id="likeBtn">&#10084;</button>
+                <div class="togglebtn">
+                    <div>
+                        <h3>Toggle Button With State Change</h3>
+                        <button type="button" aria-label="Wishlist" aria-pressed="false" id="likeBtn">&#10084;</button>
+                    </div>
+                    <div>
+                        <h3>Toggle Button With Change aria-label</h3>
+                        <button type="button" aria-label="Dislike" id="LikeBtn">
+                            <i class="fa fa-thumbs-up"></i>
+                        </button>
+                    </div>
+                </div>
+
             </div>
             <hr>
             <!-- Switch Button -->
-            <div class="box" role="region" aria-label="Switch Button">
+            <div class="box">
                 <h2>Dark Mode Switch</h2>
                 <p>This is a binary switch representing ON/OFF state. It uses <code>role="switch"</code> and
                     <code>aria-checked</code> for accessibility. Clicking it toggles the mode.

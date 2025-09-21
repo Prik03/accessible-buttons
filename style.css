@@ -25,7 +25,8 @@
   }
 }
 
-#likeBtn {
+#likeBtn,
+#LikeBtn {
   background-color: transparent;
   border: 0;
   font-size: 22px;
@@ -67,4 +68,12 @@ hr {
   width: 100%;
   height: 2px;
   background-color: black;
+}
+.togglebtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.togglebtn h3 {
+  font-size: 18px;
 }
