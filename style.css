@@ -6,7 +6,6 @@
 }
 .main {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   width: 30%;
   flex-direction: row;
