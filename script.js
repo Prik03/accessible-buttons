@@ -8,7 +8,7 @@ $("#likeBtn").on("click", function () {
 $("#LikeBtn").on("click",function(){
    isLike = !isLike;
   $(this).text(isLike? 'Pause':'Play')
-          .attr('aria-pressed',!isLike? 'true':'false');
+          .attr('aria-label',isLike? 'Pause':'Play');
 });
 
  $("#darkModeSwitch").on("click", function() {
