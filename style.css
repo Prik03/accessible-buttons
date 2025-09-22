@@ -76,3 +76,6 @@ hr {
 .togglebtn h3 {
   font-size: 18px;
 }
+.togglebtn div{
+margin: 0px 12px;
+}
