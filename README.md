@@ -18,7 +18,7 @@ This project focuses on accessibility using **ARIA roles and states** and provid
 
 ### 2. Toggle Button
 
-- Has an ON/OFF state.
+- Has an Pressed/Not-pressed state.
 - Uses aria-pressed for accessibility.
 - Example use: Wishlist, Play/Pause.
 
