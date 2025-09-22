@@ -25,24 +25,24 @@
 
             <!-- Normal Button -->
             <div class="box">
-                <h2>Normal Button</h2>
+                <h2>Action Normal Button</h2>
                 <p>This button performs a one-time action when clicked. It does not maintain any state.</p>
                 <button id="normalBtn" onclick="alert('Hello')">Action</button>
             </div>
             <hr>
             <!-- Toggle Button -->
             <div class="box">
-                <h2>Wishlist And Like Toggle Button</h2>
+                <h2>Toggle Button</h2>
                 <p>This button has a toggled state (Pressed/Not-pressed). It uses <code>aria-pressed</code> to indicate
                     the state for
                     screen readers.</p>
                 <div class="togglebtn">
                     <div>
-                        <h3>Toggle Button With State Change</h3>
+                        <h3>Wishlist Button With State Change</h3>
                         <button type="button" aria-label="Wishlist" aria-pressed="false" id="likeBtn">&#10084;</button>
                     </div>
                     <div>
-                        <h3>Toggle Button With Change Text</h3>
+                        <h3>Play/Pause Button With Change Text</h3>
                         <button type="button" id="LikeBtn" aria-label='Pause'>
                             Pause
                         </button>
@@ -53,12 +53,15 @@
             <hr>
             <!-- Switch Button -->
             <div class="box">
-                <h2>Dark Mode Switch</h2>
+                <h2>Switch</h2>
                 <p>This is a binary switch representing ON/OFF state. It uses <code>role="switch"</code> and
                     <code>aria-checked</code> for accessibility. Clicking it toggles the mode.
                 </p>
+                 <div class="togglebtn">
+                <h3>Dark Mode button</h3>
                 <button role="switch" aria-label="Dark Mode" class="switch-btn" aria-checked="false"
                     id="darkModeSwitch"></button>
+                 </div>
             </div>
 
         </div>
