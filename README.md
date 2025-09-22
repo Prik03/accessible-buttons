@@ -20,11 +20,16 @@ This project focuses on accessibility using **ARIA roles and states** and provid
 
 - Has an ON/OFF state.
 - Uses aria-pressed for accessibility.
-- Example use: Like, Wishlist, Favorite.
+- Example use: Wishlist, Play/Pause.
 
 ```html
 <button type="button" aria-label="Wishlist" aria-pressed="false" id="likeBtn">
   &#10084;
+</button>
+```
+```html
+ <button type="button" id="LikeBtn" aria-label='Pause'>
+Pause
 </button>
 ```
 
